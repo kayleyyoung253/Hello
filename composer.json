@@ -1,0 +1,13 @@
+{
+  "name": "kyounggr/328/Hello",
+  "description": "My first Fat-Free MVC project",
+  "authors": [
+    {
+      "name": "Kayley Young",
+      "email": "young.kayley@student.greenriver.edu"
+    }
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
