@@ -12,5 +12,25 @@
 </body>
 </html>
 <?php
-   echo "<h1> Hello again</h1>";
+
+   //this is my controller
+
+    // Turn on error reporting
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+
+    //require the autoload file
+    require_once('vendor/autoload.php');
+
+    //instantiate the F3 base class
+    $f3 = Base::instance();
+
+    //define a default route
+    $f3->route('GET /', function(){
+        echo "<h1>Hello!</h1>";
+    });
+
+    //run fat-free
+    $f3->run();
+
 ?>
